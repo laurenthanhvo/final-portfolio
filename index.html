@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Vo - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/1c7130d388.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Prata&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <!-- Front Page section -->
+    <section id="front-page" class="front-page">
+        <div class="front-page-content">
+            <h1 id="typing-title"></h1>
+            <h2>Data Science Student at UCSD</h2>
+        </div>
+    </section>
+    
+    <!-- Header section -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#">LAUREN VO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="scrollToSection('about')">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" onclick="scrollToSection('portfolio')">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills" onclick="scrollToSection('skills')">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="scrollToSection('contact')">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <p>
+                I am a third-year student at UCSD, majoring in Data Science with a concentration in Artificial Intelligence and Machine Learning. Throughout my academic journey, I have explored the study of algorithms, data structures, and the practical applications of these principles. My passion for technology and innovation has driven me to engage in several projects, where I have applied my skills to create impactful solutions. Beyond technical skills, I value collaboration and teamwork, having worked with diverse groups on various initiatives. These experiences have honed my ability to communicate effectively, manage projects, and contribute to a shared vision. As I continue my studies, I am eager to explore new technologies and innovative approaches and how these advancements can be leveraged to address real-world problems and make a positive impact on the greater community.
+            </p>
+            <img class="portrait-image" src="images/me.jpg" alt="self-portrait">
+        </div>
+    </section>
+
+    <!-- Project section -->
+    <section id="portfolio" class="tag scroll-target">
+        <div class="container">
+            <h2 class="section-title portfolio-title">PROJECTS</h2>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- Project 1 -->
+                <div class="reveal fade-left card">
+                        <div class="card-body">
+                            <h3 class="card-title">UC Berkeley Hacks Sustainability Month Competition</h3>
+                            <p class="card-text">Designed and implemented user gameplay application in 4-person team using Javascript in 30-day hack month period. Objective of the game was to clean up the city, town, and neighborhood through a series of mini games and interactive NPC dialogue, aimed to promote sustainability and preservation of environment. Secured first place, earning direct admission to Cal Hacks 10.0.</p>
+                            <a href="https://github.com/laurenthanhvo/CalHacks_CalaBay" target="_blank">
+                                <p>Click to view the GitHub repo.</p>
+                            </a>
+                        </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="reveal fade-left card">
+                        <div class="card-body">
+                            <h3 class="card-title">Roll the Dice</h3>
+                            <p class="card-text">Developed an engaging web-based dice game using HTML, CSS, and JavaScript. The game features dynamic gameplay where users can roll dice and track their balance, with custom CSS animations and responsive design for a visually appealing and user-friendly experience.</p>
+                        </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="reveal fade-left card">
+                        <div class="card-body">
+                            <h3 class="card-title">Personal Portfolio</h3>
+                            <p class="card-text">Developed a personal portfolio website using HTML, CSS, Bootstrap, and JavaScript. The site includes sections for an introduction, about me, projects, and contact information. It features smooth scrolling animations, a dynamic typing effect for the title, and a responsive design to ensure usability across various devices.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="tag section">
+        <div class="container">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="row">
+                <div class="col-md-6 skill-section" style="background-color: #E5ECF4;">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Collaboration</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Attention to Detail</li>
+                        <li>Time Management</li>
+                        <li>Work Ethic</li>
+                        <li>Conflict Management</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 skill-section" style="background-color: #646f78; color: #E5ECF4;">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="tag section">
+        <div class="container">
+            <h2 class="section-title portfolio-title">CONTACT</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:lavo@ucsd.edu">lavo@ucsd.edu</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+4088261719">(408) 826-1719</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/laurenthanhvo/" target="_blank">Linkedin</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://drive.google.com/file/d/1eJ_T2PxxNBW04MwbDWQIWonRtQrT4rp4/view?usp=sharing" target="_blank" class="button">Resume</a>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Footer section -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Lauren Vo</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>

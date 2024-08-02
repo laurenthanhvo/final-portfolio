@@ -1,0 +1,293 @@
+body {
+    font-family: 'Montserrat';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #646f78;  /* Dark Grayish Blue */
+    background-color: #E5ECF4;  /* Lighter Blue Gray */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}  
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+  
+header nav a:hover {
+  color: #708ab0;  /* Blue */
+  transition: 0.5s ease-out;
+  letter-spacing: 2.5px;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+  
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+
+/* Front Page Styles */
+.front-page {
+    height: 20vh; 
+    background-color: #708ab0;  /* Blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-page-content {
+    text-align: center;
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    font-family: 'Prata';
+    letter-spacing: 2px;
+}
+
+.front-page-content h2 {
+    font-size: 20px;
+}
+
+.front-page h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    position: relative; 
+    z-index: 1000; 
+}
+
+.scroll-target {
+    scroll-margin-top: 90px; 
+}
+
+.navbar {
+    font-family: 'Prata';
+    letter-spacing: 2px;
+}
+
+.navbar-custom {
+    background-color: #646f78;  /* Dark Grayish Blue */
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 40px;
+    background-color: #E5ECF4;  /* Lighter Blue Gray */
+}
+
+.section-title {
+    font-size: 36px;
+    color: #646f78;  /* Dark Grayish Blue */
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #b0a375;  /* Blue */
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/* About Section Styles */
+#about {
+    background-color: #E5ECF4;  /* Lighter Blue Gray */
+    color: #646f78;  /* Dark Grayish Blue */
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #708ab0;  /* Blue */
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portfolio-title {
+    color: #E5ECF4;  /* Lighter Blue Gray */
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(100, 111, 120, 0.3);  /* Dark Grayish Blue Shadow */
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #E5ECF4;  /* Lighter Blue Gray */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card-title {
+    font-size: 24px;
+    color: #646f78;  /* Dark Grayish Blue */
+}
+
+.card-text {
+    font-size: 16px;
+    color: #646f78;  /* Dark Grayish Blue */
+}
+
+/* Skills Section Styles */
+#skills {
+    background-color: #E5ECF4;  /* Lighter Blue Gray */
+    color: #646f78;  /* Dark Grayish Blue */
+    font-family: 'Montserrat';
+}
+
+.skill-section {
+    padding: 20px;
+}
+
+.skill-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-section li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #708ab0;  /* Blue */
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    font-family: 'Prata';
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#contact a {
+    color: #E5ECF4;  /* Lighter Blue Gray */
+}
+
+.section-title-light {
+    font-size: 30px;
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.portrait-image {
+    width: 200px;  
+    height: 200px;  
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;  
+    display: block;  
+}
+
+.contact-info {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b0a375;  /* Dark Grayish Blue */
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #646f78;  /* Blue */
+    color: #E5ECF4;  /* Lighter Blue Gray */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #646f78;  /* Dark Grayish Blue */
+    color: #E5ECF4;  /* Lighter Blue Gray */
+    font-family: 'Didot';
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.fa-solid, .fa-brands {
+    padding: 15px 15px 15px 0px;
+}
+
+a {
+    color: #646f78;  /* Dark Grayish Blue */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
