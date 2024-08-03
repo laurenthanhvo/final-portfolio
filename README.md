@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a personal portfolio website for Lauren Vo, a Data Science student at UCSD with a concentration in Artificial Intelligence and Machine Learning. The website showcases Lauren's skills, projects, and contact information in a visually appealing and responsive manner. The site is built using HTML, CSS, Bootstrap, and JavaScript, with additional animations and smooth scrolling features.
+This project is my personal portfolio website, showcasing my skills, projects, and contact information. The site is built using HTML, CSS, Bootstrap, and JavaScript, with additional animations and smooth scrolling features.
 
 ## Features
 
