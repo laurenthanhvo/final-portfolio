@@ -6,7 +6,7 @@ This project is my personal portfolio website, showcasing my skills, projects, a
 
 ## Features
 
-- **Front Page**: A dynamic landing page with a typing effect for the title.
+- **Top Header**: A dynamic header with a typing effect for the title.
 - **Navigation Bar**: A sticky, collapsible navigation bar for easy access to different sections.
 - **About Section**: Information about Lauren's academic background, interests, and a self-portrait image.
 - **Projects Section**: Details of various projects Lauren has worked on, including links to GitHub repositories.
