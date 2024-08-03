@@ -70,7 +70,7 @@ header nav a:hover {
 }
 
 /* Front Page Styles */
-.front-page {
+.top-header {
     height: 20vh; 
     background-color: #708ab0; 
     display: flex;
@@ -80,18 +80,18 @@ header nav a:hover {
     box-sizing: border-box; 
 }
 
-.front-page-content {
+.top-header-content {
     text-align: center;
     color: #E5ECF4; 
     font-family: 'Prata';
     letter-spacing: 2px;
 }
 
-.front-page-content h2 {
+.top-header-content h2 {
     font-size: 20px;
 }
 
-.front-page h1 {
+.top-header h1 {
     font-size: 72px;
     margin: 0;
     word-break: break-word; 
@@ -294,7 +294,7 @@ a {
         padding: 10px;
     }
 
-    .front-page h1 {
+    .top-header h1 {
         font-size: 48px; 
     }
 
@@ -336,7 +336,7 @@ a {
         padding: 10px;
     }
 
-    .front-page h1 {
+    .top-header h1 {
         font-size: 36px; 
     }
 
